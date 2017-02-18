@@ -111,7 +111,7 @@
 
     <Button
         android:id="@+id/buttonSearchTheWeb"
-        android:background="@drawable/ic_language_black_24dp"
+        android:background="@drawable/ic_internet_red_24dp"
         android:layout_height="51dp"
         android:textColor="#235789"
         android:layout_marginEnd="16dp"
