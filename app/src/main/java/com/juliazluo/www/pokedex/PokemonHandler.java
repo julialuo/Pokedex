@@ -18,7 +18,10 @@ public class PokemonHandler {
     public PokemonHandler() {
         pokedex = new Pokedex();
         pokemonList = pokedex.getPokemon();
-        pokemonTypes = populateTypes();
+
+        if (pokemonTypes == null) {
+            pokemonTypes = populateTypes();
+        }
     }
 
     public ArrayList<String> populateTypes() {

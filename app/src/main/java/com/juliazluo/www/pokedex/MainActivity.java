@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements MultiSpinner.Mult
         dpInput = (EditText) findViewById(R.id.dp_input);
 
 
-        ((ImageButton) findViewById(R.id.filter_btn)).setOnClickListener(new View.OnClickListener() {
+        (findViewById(R.id.filter_btn)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int minAttack = 0;

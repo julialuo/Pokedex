@@ -54,11 +54,7 @@ public class ListActivity extends AppCompatActivity {
 
             }
         });
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
         Intent intent = getIntent();
         boolean randomize = intent.getBooleanExtra("RANDOMIZE", true);
 
@@ -72,7 +68,7 @@ public class ListActivity extends AppCompatActivity {
             pokemonList = pokemonHandler.filter(chosenTypes, minAttack, minDP, minHP);
         }
 
-        Log.i("New list size", pokemonList.size() + "");
+        Log.d("New list size", pokemonList.size() + "");
         adapter.setFilter(pokemonList);
     }
 }
